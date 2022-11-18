@@ -11,39 +11,48 @@ https://templatemo.com/tm-578-first-portfolio
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
+  /* --white-color:                  #ffffff;
   --primary-color:                #535da1;
   --secondary-color:              #14B789;
   --section-bg-color:             #f9f9f9;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
-  --featured-border-color:        #727aab;
+  --featured-border-color:        #727aab; */
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --white-color: #ffffff;
+  --primary-color: #59C1BD;
+  --secondary-color: #153462;
+  --section-bg-color: #f9f9f9;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
+  --featured-border-color: #6D9886;
 
-  --h1-font-size:                 62px;
-  --h2-font-size:                 48px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               12px;
-  --copyright-font-size:          14px;
+  --body-font-family: 'DM Sans', sans-serif;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --h1-font-size: 62px;
+  --h2-font-size: 48px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 12px;
+  --copyright-font-size: 14px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family); 
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
 
 
@@ -109,7 +118,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -207,12 +216,15 @@ strong {
 }
 
 @-webkit-@keyframes spinner {
-  to {transform: rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 
@@ -273,7 +285,7 @@ strong {
 
 .custom-btn:hover {
   background: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   color: var(--white-color);
 }
 
@@ -290,11 +302,11 @@ strong {
 }
 
 .custom-link {
-	background-color: var(--primary-color);
+  background-color: #1e706d;
 }
 
 .custom-link:hover {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 
@@ -387,14 +399,14 @@ strong {
   height: 2px;
 }
 
-.navbar-nav .nav-link.active::after, 
+.navbar-nav .nav-link.active::after,
 .navbar-nav .nav-link:hover::after {
   background: var(--secondary-color);
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .navbar-toggler {
@@ -475,7 +487,7 @@ strong {
   padding-bottom: 330px;
 }
 
-@media  screen and (min-width: 991px) {
+@media screen and (min-width: 991px) {
   .hero {
     height: 60vh;
   }
@@ -484,18 +496,18 @@ strong {
 .hero-title,
 .hero h2 {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   border-radius: var(--border-radius-large);
   display: inline-block;
   padding: 8px 24px;
 }
 
 .hero-title {
-	font-size: 44px;
+  font-size: 44px;
 }
 
 .hero h2 {
-	font-size: 38px;
+  font-size: 38px;
 }
 
 .hero-text {
@@ -511,7 +523,7 @@ strong {
   height: 350px;
   position: absolute;
   z-index: 22;
-  top: -50px;
+  /* top: -50px; */
   right: 0;
   left: 0;
   margin: auto;
@@ -608,12 +620,12 @@ strong {
 -----------------------------------------*/
 
 .clients-item-height {
-	height: 120px;
+  height: 120px;
 }
 
 .clients-image {
   display: block;
-  max-width: 100px;
+  max-width: 130px;
   margin: auto;
   transition: all ease 0.2s;
 }
@@ -652,7 +664,7 @@ strong {
 
 .services-thumb:hover {
   border: 2px solid var(--secondary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 .services-thumb:hover .services-icon-wrap {
@@ -989,7 +1001,7 @@ strong {
   }
 
   .hero-image-wrap {
-    top: -50px;
+    /* top: -50px; */
     width: 400px;
     height: 400px;
   }
@@ -997,11 +1009,11 @@ strong {
   .hero-image {
     min-width: 650px;
   }
-  
+
   .hero-title,
-	.hero h2 {
-	  font-size: var(--h2-font-size);
-	}
+  .hero h2 {
+    font-size: var(--h2-font-size);
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1184,4 +1196,3 @@ strong {
     min-width: inherit;
   }
 }
-
